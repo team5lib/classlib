@@ -10,7 +10,7 @@ open class Patron {
     var password: String
     var surveyList: SurveyList
 
-    constructor(username: String, password: String) {
+    constructor(username: String, password: String, isadmin: Boolean) {
         this.username = username
         this.password = password
         this.surveyList = SurveyList()
@@ -18,10 +18,12 @@ open class Patron {
         if (username.trim().length < username.length) throw Error("Can't start or end with space")
         if (patronList.containsKey(username)) throw Error("Username already existed")
         patronList+=this
+        if (isadmin) adminList+=this
     }
 
     companion object {
         var patronList = PatronList()
+        val adminList = AdminList()
     }
 }
 
