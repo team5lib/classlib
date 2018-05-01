@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="244db9da-a5fe-4904-9a78-c44c1efdf4db" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/class/src/main/kotlin/Response.kt" beforeDir="false" afterPath="$PROJECT_DIR$/class/src/main/kotlin/Response.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/class/src/main/kotlin/Structure.kt" beforeDir="false" afterPath="$PROJECT_DIR$/class/src/main/kotlin/Structure.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -58,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Request.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Request.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/class/src/main/kotlin/Request.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -71,16 +72,16 @@
         <entry file="file://$PROJECT_DIR$/class/src/main/kotlin/Response.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+              <caret line="5" column="29" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Structure.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Structure.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/class/src/main/kotlin/Structure.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="-782">
+              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
               <folding>
                 <element signature="e#28#80#0" expanded="true" />
               </folding>
@@ -995,14 +996,14 @@
         <option value="$PROJECT_DIR$/class/src/main/kotlin/FileHandler.kt" />
         <option value="$PROJECT_DIR$/class/src/main/kotlin/Request.kt" />
         <option value="$PROJECT_DIR$/class/build.gradle" />
-        <option value="$PROJECT_DIR$/class/src/main/kotlin/Response.kt" />
         <option value="$PROJECT_DIR$/class/src/main/kotlin/Structure.kt" />
+        <option value="$PROJECT_DIR$/class/src/main/kotlin/Response.kt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="76" />
-    <option name="y" value="96" />
+    <option name="x" value="36" />
+    <option name="y" value="160" />
     <option name="width" value="1204" />
     <option name="height" value="506" />
   </component>
@@ -1150,7 +1151,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="76" y="96" width="1204" height="506" extended-state="0" />
+    <frame x="36" y="160" width="1204" height="506" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -1352,20 +1353,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/class/src/main/kotlin/Response.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/src/main/kotlin/Request.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/class/src/main/kotlin/FileHandler.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-735">
@@ -1376,13 +1363,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/class/src/main/kotlin/Response.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/class/src/main/kotlin/Structure.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        <state relative-caret-position="-782">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
           <folding>
             <element signature="e#28#80#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/src/main/kotlin/Request.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
