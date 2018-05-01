@@ -59,7 +59,7 @@ class ScaleAnswerQuestion:Question{
 
 //Survey object
 class Survey:ArrayList<Question>{
-    var title:String
+    var title:String = "null"
     constructor(title:String):super(){
         this.title = title
     }
