@@ -40,25 +40,24 @@ class AdminList:HashMap<String,Patron>()
 open class Question(val question: String)
 
 //Subclasses and its helper classes of Question
-class MultAnswer:HashMap<Char, String>()
 class MultChoiceQuestion:Question{
-    var answer:MultAnswer? = null
-    constructor(question: String, multAnswer: MultAnswer?=null):super(question){
-        this.answer = multAnswer
+    var answer:String
+    constructor(question: String, answer: String=""):super(question){
+        this.answer = answer
     }
 }
 
 class LongAnswerQuestion:Question{
-    var answer:String? = null
-    constructor(question: String,stringAnswer:String?=null):super(question){
+    var answer: String
+    constructor(question: String,stringAnswer:String = ""):super(question){
         this.answer = stringAnswer
     }
 }
 
 class ScaleAnswerQuestion:Question{
-    var answer:Int? = null
-    constructor(question: String,intAnswer: Int?=null):super(question){
-        this.answer = intAnswer
+    var answer: String
+    constructor(question: String,answer: String = ""):super(question){
+        this.answer = answer
     }
 }
 
@@ -69,10 +68,6 @@ class Survey:ArrayList<Question>{
     var title:String
     constructor(title:String):super(){
         this.title = title
-        for(survey in surveyList){
-            if (survey.title == this.title) throw Error("Survey Existed")
-        }
-        surveyList.add(this)
     }
     companion object {
         var surveyList = SurveyList()

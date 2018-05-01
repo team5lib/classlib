@@ -76,8 +76,8 @@
       <file leaf-file-name="Structure.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/class/src/main/kotlin/Structure.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="60" column="31" lean-forward="true" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+            <state relative-caret-position="71">
+              <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
               <folding>
                 <element signature="e#28#80#0" expanded="true" />
               </folding>
@@ -998,8 +998,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="43" />
-    <option name="y" value="332" />
+    <option name="x" value="133" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="724" />
   </component>
@@ -1162,8 +1162,8 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23515625" />
-      <window_info active="true" anchor="bottom" id="Build" order="7" visible="true" weight="0.18983957" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23515625" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.18983957" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1302,8 +1302,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/class/src/main/kotlin/Structure.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="60" column="31" lean-forward="true" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+        <state relative-caret-position="71">
+          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
           <folding>
             <element signature="e#28#80#0" expanded="true" />
           </folding>
