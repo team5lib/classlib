@@ -37,7 +37,7 @@ class AdminList:HashMap<String,Patron>()
 
 
 //Question class
-open class Question(val question: String, val answer: String = "null")
+open class Question(var question: String, var answer: String = "null")
 
 //Subclasses and its helper classes of Question
 class MultChoiceQuestion:Question{
@@ -61,7 +61,7 @@ class ScaleAnswerQuestion:Question{
 class Survey{
     var title:String = "null"
     var questionList = ArrayList<Question>()
-    
+
     constructor(title:String):super(){
         this.title = title
     }
