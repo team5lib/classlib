@@ -37,7 +37,7 @@ class AdminList:HashMap<String,Patron>()
 
 
 //Question class
-open class Question(val question: String, val answer: String)
+open class Question(val question: String, val answer: String = "null")
 
 //Subclasses and its helper classes of Question
 class MultChoiceQuestion:Question{
