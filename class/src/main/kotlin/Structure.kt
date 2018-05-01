@@ -8,13 +8,13 @@ import kotlin.collections.HashMap
 open class Patron {
     var username: String
     var password: String
-    var isAdmin: Boolean
+    var isadmin: Boolean
     var surveyList: SurveyList
 
-    constructor(username: String, password: String, isAdmin: Boolean) {
+    constructor(username: String, password: String, isadmin: Boolean) {
         this.username = username
         this.password = password
-        this.isAdmin = isAdmin
+        this.isadmin = isadmin
         this.surveyList = SurveyList()
         if (username.trim().length < 4) throw Error("Length must >= 4")
         if (username.trim().length < username.length) throw Error("Can't start or end with space")
