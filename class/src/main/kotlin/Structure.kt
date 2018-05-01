@@ -42,36 +42,38 @@ open class Question(val question: String)
 //Subclasses and its helper classes of Question
 class MultAnswer:HashMap<Char, String>()
 class MultChoiceQuestion:Question{
-    var multAnswer:MultAnswer? = null
+    var answer:MultAnswer? = null
     constructor(question: String, multAnswer: MultAnswer?=null):super(question){
-        this.multAnswer = multAnswer
+        this.answer = multAnswer
     }
 }
 
 class LongAnswerQuestion:Question{
-    var stringAnswer:String? = null
+    var answer:String? = null
     constructor(question: String,stringAnswer:String?=null):super(question){
-        this.stringAnswer = stringAnswer
+        this.answer = stringAnswer
     }
 }
 
 class ScaleAnswerQuestion:Question{
-    var intAnswer:Int? = null
+    var answer:Int? = null
     constructor(question: String,intAnswer: Int?=null):super(question){
-        this.intAnswer = intAnswer
+        this.answer = intAnswer
     }
 }
-
 
 
 
 //Survey object
 class Survey:ArrayList<Question>{
-    var id:Int
+    var id:String
     var title:String
     constructor(title:String):super(){
         this.title = title
-        this.id = title.hashCode()
+        this.id = title.hashCode().toString()
+        for(survey in surveyList){
+            if (survey.id == id) throw Error("Survey Existed")
+        }
         surveyList.add(this)
     }
     companion object {
