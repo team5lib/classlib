@@ -23,7 +23,7 @@ open class Patron {
 
     companion object {
         var patronList = PatronList()
-        val adminList = AdminList()
+        var adminList = AdminList()
     }
 }
 

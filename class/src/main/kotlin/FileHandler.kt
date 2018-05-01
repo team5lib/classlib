@@ -71,7 +71,7 @@ class FileHandler {
         }
         return PatronList()
     }
-    
+
     fun readAdmins(): AdminList {
         val jsonText = adminFile.readText()
         if (jsonText.length > Integer(0).toLong()){
