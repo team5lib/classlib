@@ -66,13 +66,11 @@ class ScaleAnswerQuestion:Question{
 
 //Survey object
 class Survey:ArrayList<Question>{
-    var id:String
     var title:String
     constructor(title:String):super(){
         this.title = title
-        this.id = title.hashCode().toString()
         for(survey in surveyList){
-            if (survey.id == id) throw Error("Survey Existed")
+            if (survey.title == this.title) throw Error("Survey Existed")
         }
         surveyList.add(this)
     }
