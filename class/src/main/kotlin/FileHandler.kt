@@ -4,6 +4,7 @@ package edu.uiowa.cs.team5
 import com.google.gson.Gson;
 import java.io.*
 import com.google.gson.reflect.TypeToken
+import edu.uiowa.cs.team5.Patron.Companion.adminList
 import edu.uiowa.cs.team5.Patron.Companion.patronList
 import edu.uiowa.cs.team5.Survey.Companion.surveyList
 import java.time.LocalDateTime
@@ -17,10 +18,12 @@ class FileHandler {
     // all the  address
     private val patronFile = File("Data/patronFile.txt")
     private val logFile = File("Data/logFile.txt")
+    private val adminFile = File("Data/adminFIle.txt")
 
     init{
         if (!patronFile.exists()) patronFile.parentFile.mkdirs();patronFile.createNewFile()
         if (!logFile.exists()) logFile.parentFile.mkdirs();logFile.createNewFile()
+        if (!adminFile.exists()) adminFile.parentFile.mkdirs();adminFile.createNewFile()
     }
 
     //gson object
@@ -56,6 +59,10 @@ class FileHandler {
         patronFile.writeText(gson.toJson(patronList))
     }
 
+    fun writeAdmins(){
+        adminFile.writeText(gson.toJson(adminList))
+    }
+
     //reader method
     fun readPatrons(): PatronList {
         val jsonText = patronFile.readText()
@@ -63,6 +70,14 @@ class FileHandler {
             return gson.fromJson<PatronList>(jsonText)
         }
         return PatronList()
+    }
+    
+    fun readAdmins(): AdminList {
+        val jsonText = adminFile.readText()
+        if (jsonText.length > Integer(0).toLong()){
+            return gson.fromJson<AdminList>(jsonText)
+        }
+        return AdminList()
     }
 
     fun readLog():String{
