@@ -37,24 +37,7 @@ class AdminList:HashMap<String,Patron>()
 
 
 //Question class
-open class Question(var question: String, var answer: String = "null")
-
-//Subclasses and its helper classes of Question
-class MultChoiceQuestion:Question{
-    constructor(question: String, answer: String=""):super(question,answer){
-    }
-}
-
-class LongAnswerQuestion:Question{
-    constructor(question: String,answer:String = "null"):super(question,answer){
-    }
-}
-
-class ScaleAnswerQuestion:Question{
-    constructor(question: String,answer: String = "null"):super(question,answer){
-    }
-}
-
+open class Question(var question: String, var answer: String = "null", var stage: Int)
 
 
 //Survey object
